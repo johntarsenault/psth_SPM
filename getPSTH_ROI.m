@@ -7,7 +7,7 @@ for k = 1:length(PSC)
 end
 end
 
-%for the given run and roi cut out PSTH for each stimulus consition
+%for the given run and roi cut out PSTH for each stimulus condition
 function PSTH_Run = getPSTH_Run_ROI(PSC,currentMatFile,TR,tpPre,tpPost)
     clear PSTH_Run
     PSTH_Run = {};

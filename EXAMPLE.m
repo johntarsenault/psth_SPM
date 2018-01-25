@@ -16,7 +16,7 @@ printDir = matFileDir;
 tpPre  = 10;
 tpPost = 50;
 
-%colors of each condition
+%colors of each condition in RGB values
 colorValues{1} = [.2 .2 .2]; 
 colorValues{2} = [.2 .2 .8];
 colorValues{3} = [.2 .8 .2];
@@ -26,7 +26,7 @@ colorValues{5} = [.8 .2 .8];
 %high pass filter in seconds and TR in seconds 
 %used to determine high pass filter
 HPF = 512;
-TR=2;
+TR  = 2;
 
 %number of processors to use for parallelization
 %if 1 then runs serial
