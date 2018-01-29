@@ -1,4 +1,4 @@
-function [PSTH_PerRun,PSTH_label] = determinePSTH_PerRun_PF(matlabbatch,ROIDir,ROINames,TR,tpPre,tpPost,HPF,numClusters)
+function [PSTH_PerRun,PSTH_label] = determinePSTH_PerRun_PF(matlabbatch,ROIDir,ROINames,TR,tpPre,tpPost,HPF,numClusters,flipCBV)
 
 runs = length(matlabbatch{1}.spm.stats.fmri_spec.sess);
 currentImageName = cell(runs,1);
@@ -20,7 +20,7 @@ counter =  0;
     currentMatFile{i} = load(matlabbatch{1}.spm.stats.fmri_spec.sess(i).multi{1});
        
     %find the mean PSC timecourse of current 4D in the current roi
-    psc_Current{i} = pctSigChange_multi(currentImageName{i},ROIDir,ROINames,TR,HPF);
+    psc_Current{i} = pctSigChange_multi(currentImageName{i},ROIDir,ROINames,TR,HPF,flipCBV);
      
     %make a PSTH
     PSTH_PerRun{i} = getPSTH_ROI(psc_Current{i},currentMatFile{i},TR,tpPre,tpPost);
