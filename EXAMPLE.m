@@ -1,11 +1,9 @@
 
-%testing... second time
-
 % specify spm version
 spm_version	= '12';
 
 %location of spm batch file
-matFileDir = '/data/luna/luna_j/GBW-0280_Neuro_Backup/0006_Prof_Vanduffel/examples/spm12/facebody_glm/';
+matFileDir = '/mnt/.autofs/storage/gbw-s-neu01_fmri-monkey-03/PROJECT/codeshare/example/fmri_spm/spm_12/facebody_glm/';
 matFile    = 'batch_spm12_facebody_glm.mat';
 
 %location of nifti ROIs

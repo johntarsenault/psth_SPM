@@ -1,4 +1,7 @@
 #PSTH_SPM
+plot the peri-stimulus time histogram using spm batch file and nifti ROIs as input
+
+![](./README_PNGs/roi_test3_PSTH.png) 
 
 ## Version and file locations
 specify spm version
@@ -7,7 +10,7 @@ specify spm version
 
 location of spm 12 batch file
 
-	matFileDir = '/data/luna/luna_j/GBW-0280_Neuro_Backup/0006_Prof_Vanduffel/examples/spm12/facebody_glm/';
+	matFileDir = '/mnt/.autofs/storage/gbw-s-neu01_fmri-monkey-03/PROJECT/codeshare/example/fmri_spm/spm_12/facebody_glm/';
 	matFile    = 'batch_spm12_facebody_glm.mat';
 
 
